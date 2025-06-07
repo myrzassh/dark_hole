@@ -1,0 +1,252 @@
+:root {
+  --index: calc(1vw + 1vh);
+}
+
+:root {
+  --box: calc(400px 1vw + 5vh 1000px);
+}
+
+html,
+body {
+  overflow: hidden;
+}
+
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(to right, #1f1c2c, #928dab);
+
+  color: #fff;
+  line-height: 1.2;
+  margin: 0;
+  padding: 20px;
+  overflow: hidden;
+}
+
+#welcome {
+  background-color: rgba(0, 0, 0, 0.6);
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0 0 20px rgba(255, 255, 255, 0.1);
+  margin: 50px auto;
+  max-width: 600px;
+  text-align: center;
+  height: 500px;
+}
+
+#welcome h1 {
+  font-size: 2.2rem;
+  margin-bottom: 20px;
+  color: #00ffe7;
+}
+
+#welcome p {
+  margin-bottom: 20px;
+}
+
+#welcome a {
+  display: inline-block;
+  background: #06b1a0;
+  color: #000;
+  text-decoration: none;
+  padding: 10px 20px;
+  border-radius: 8px;
+  margin: 10px;
+  transition: background 0.5s ease;
+  cursor: pointer;
+}
+
+#welcome a:hover {
+  background: #00c0aa;
+  color: #fff;
+}
+
+#rules {
+  max-width: 600px;
+  margin: 60px auto;
+  background-color: rgba(255, 255, 255, 0.1);
+  padding: 25px;
+  border-radius: 15px;
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
+}
+
+.cont-rules {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100%;
+}
+#rules h2 {
+  color: #ffcc00;
+  margin-bottom: 15px;
+  text-align: center;
+}
+
+#rules ul {
+  list-style: square;
+  padding-left: 20px;
+}
+
+.parag {
+  display: inline-block;
+  background: #06b1a0;
+  color: #000;
+  padding: 10px 20px;
+  border-radius: 8px;
+  margin: 10px;
+  transition: background 0.5s ease;
+  cursor: pointer;
+}
+.parag > a {
+  text-decoration: none;
+}
+#parag a:hover {
+  background: #00c0aa;
+  color: #fff;
+}
+.ascii-art {
+  display: none;
+}
+
+.spacer {
+  height: 1000px;
+}
+
+/*                                                     style- вопрсов                                 */
+
+.map {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100%;
+}
+.container {
+  width: 400px;
+  /* margin: 60px auto; */
+  background-color: rgba(255, 255, 255, 0.1);
+  padding: 100px;
+  border-radius: 15px;
+  box-shadow: -20px 10px 10px rgba(11, 24, 11, 0.4);
+}
+
+.container ul {
+  list-style: square;
+  padding-left: 20px;
+}
+.container h2 {
+  color: #ffcc00;
+  margin-bottom: 15px;
+  text-align: center;
+}
+.container a {
+  text-decoration: none;
+  color: white;
+}
+.container a:hover {
+  color: rgb(2, 175, 23);
+}
+.wrong-box img {
+  max-width: 50%;
+  border-radius: 10px;
+}
+.correct-box img {
+  max-width: 50%;
+  border-radius: 10px;
+}
+.wrong-box {
+  background-color: rgba(0, 0, 0, 0.6);
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0 0 20px rgba(255, 255, 255, 0.1);
+  margin: 50px auto;
+  max-width: 600px;
+  text-align: center;
+  height: calc(var(--box) * 20);
+}
+
+.correct-box {
+  background-color: rgba(0, 0, 0, 0.6);
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0 0 20px rgba(255, 255, 255, 0.1);
+  margin: 50px auto;
+  max-width: 600px;
+  text-align: center;
+  height: calc(var(--box) * 20);
+}
+
+.main-wrong {
+  display: flex;
+  align-items: center;
+}
+
+.main-correct {
+  display: flex;
+  align-items: center;
+}
+
+.red {
+  color: red;
+}
+
+.green {
+  color: green;
+}
+
+#next {
+  color: rgb(230, 166, 3);
+}
+#back {
+  color: #d6fc008f;
+}
+#next:hover {
+  color: rgba(255, 217, 0, 0.984);
+}
+#back:hover {
+  color: #d6fc00;
+}
+
+.return {
+  color: rgb(230, 166, 3);
+}
+.up {
+  color: #d6fc008f;
+}
+.return:hover {
+  color: rgba(255, 217, 0, 0.984);
+}
+.up:hover {
+  color: #d6fc00;
+}
+
+/*                                                     style- вопрсов                                  */
+
+/*     @media                                                                                         */
+
+
+
+
+@media (max-width: 1200px) {
+  html,
+  body {
+    overflow: hidden;
+    margin: 0%;
+    padding: 0%;
+  }
+  .ascii-art {
+    display: block;
+  }
+}
+ 
+@media (max-width: 430px) {
+  html,
+  body {
+    overflow: hidden;
+    margin: 0%;
+    padding: 0%;
+  }
+ 
+
+}
+
