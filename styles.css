@@ -326,3 +326,14 @@
                 transform: rotateZ(-360deg);
             }
         }
+
+
+    @media (max-width: 800px) {
+
+        body {
+            background-color: black;
+        }
+   .container { display: none;
+
+   }
+}
