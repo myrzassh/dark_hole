@@ -1,0 +1,339 @@
+ * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background: radial-gradient(circle, #000428, #05080a);
+
+            overflow: hidden;
+        }
+
+        .container {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            perspective: 1000px;
+            position: relative;
+        }
+
+        .dark {
+            background: radial-gradient(circle, #040404, #0c0c0c);
+            width: calc(var(--index) * 10);
+            height: calc(var(--index) * 10);
+            border-radius: 50%;
+            align-items: center;
+            justify-content: center;
+            position: absolute;
+            box-shadow: -0px 2px rgba(250, 247, 247, 0.316);
+            animation: orbita 20s linear infinite;
+            z-index: 0;
+        }
+ 
+        .dark2 {
+      background: radial-gradient(circle, #040404, #0c0c0c);
+      width: calc(var(--index) * 10);
+      height: calc(var(--index) * 6);
+      border-radius: 150px 150px 30px 30px;
+      left: 50%;
+      top: 50%;
+      position: absolute;
+      transform: translate(-50%, -80%);
+      z-index: 1;
+        }
+        /*                                          .lin                                                */
+        .lin {
+            width: calc(var(--index) * 20);
+            height: calc(var(--index) * 20);
+            box-shadow: 10px 10px 50px rgb(255, 255, 255);
+            border-radius: 50%;
+
+
+            animation: spin2 5s linear infinite;
+        }
+
+        .lin2 {
+            width: calc(var(--index) * 22);
+            height: calc(var(--index) * 22);
+            box-shadow: 0 0 50px rgb(255, 255, 255);
+            border-radius: 50%;
+
+
+            transform: translate(-75%, -50%);
+            animation: spin 2s linear infinite;
+        }
+
+        .lin3 {
+            width: calc(var(--index) * 26);
+            height: calc(var(--index) * 26);
+            box-shadow: 10px 10px 100px rgb(255, 255, 255);
+            border-radius: 50%;
+
+            transform: translate(-70%, -50%);
+            animation: spin 2s linear infinite;
+        }
+
+        .lin4 {
+            width: calc(var(--index) * 29);
+            height: calc(var(--index) * 29);
+            box-shadow: 0 0 100px rgb(255, 255, 255);
+            border-radius: 50%;
+
+
+        }
+
+        .lin5 {
+            width: calc(var(--index) * 33);
+            height: calc(var(--index) * 33);
+            box-shadow: 0 0 100px rgb(255, 255, 255);
+            border-radius: 50%;
+            animation: spin 2s linear infinite;
+
+
+        }
+
+        .lin6 {
+            width: calc(var(--index) * 37);
+            height: calc(var(--index) * 37);
+            box-shadow: 0 0 100px rgb(255, 255, 255);
+            border-radius: 50%;
+
+        }
+
+        .lin7 {
+            width: calc(var(--index) * 40);
+            height: calc(var(--index) * 40);
+            box-shadow: 10px 10px 50px rgb(255, 255, 255);
+            border-radius: 50%;
+            animation: spin 4s linear infinite;
+
+
+
+
+        }
+
+        /*            .circle                          */
+        .circle {
+            position: absolute;
+            width: calc(var(--index) * 10.1);
+            height: calc(var(--index) * 10.1);
+            box-shadow: 0 0 50px rgba(18, 18, 18, 0.615);
+            border-radius: 60%;
+        }
+
+        .circle2 {
+            position: absolute;
+            width: calc(var(--index) * 10.2);
+            height: calc(var(--index) * 10.2);
+            box-shadow: 0 0 50px rgba(18, 18, 18, 0.615);
+            border-radius: 60%;
+            border: 0.5px solid rgba(0, 0, 0, 0.077);
+        }
+
+        .circle3 {
+            position: absolute;
+            width: calc(var(--index) * 10.5);
+            height: calc(var(--index) * 10.5);
+            box-shadow: 0 0 50px rgba(230, 228, 226, 0.615);
+            border-radius: 60%;
+        }
+
+        .circle4 {
+            position: absolute;
+            width: calc(var(--index) * 10.9);
+            height: calc(var(--index) *10.9);
+            box-shadow: 0 0 50px rgba(221, 221, 224, 0.615);
+            border-radius: 60%;
+            
+            border: 0.5px solid rgba(0, 0, 0, 0.077);
+        }
+
+        .circle5 {
+            position: absolute;
+            width: calc(var(--index) * 11);
+            height: calc(var(--index) * 11);
+            border-radius: 60%;
+            border: 20px solid rgba(0, 0, 0, 0.073);
+            box-shadow: 0 0 50px rgba(230, 228, 226, 0.615);
+        }
+
+        /*                ::before                               */
+
+        circle::before {
+            content: "";
+            position: absolute;
+            width: calc(var(--index) * 10.1);
+            height: calc(var(--index) * 10.1);
+            box-shadow: 0 0 50px rgba(18, 18, 18, 0.615);
+            border-radius: 60%;
+            box-shadow: 0 -20px 40px rgba(245, 244, 244, 0.8);
+
+            
+            animation: orbita 1s linear infinite;
+        }
+
+        .circle2::before {
+            content: "";
+            position: absolute;
+            width: calc(var(--index) * 10.2);
+            height: calc(var(--index) * 10.2);
+            box-shadow: 0 0 50px rgba(18, 18, 18, 0.615);
+            border-radius: 60%;
+            border: 0.5px solid rgba(0, 0, 0, 0.077);
+            box-shadow: 0 -20px 40px rgba(245, 244, 244, 0.8);
+
+            
+            animation: orbita 3s linear infinite;
+        }
+
+        .circle3::before {
+            content: "";
+            position: absolute;
+            width: calc(var(--index) * 10.5);
+            height: calc(var(--index) * 10.5);
+            box-shadow: 0 0 50px rgba(230, 228, 226, 0.615);
+            border-radius: 60%;
+            box-shadow: 0 -20px 40px rgba(245, 244, 244, 0.8);
+
+           
+            animation: orbita 4s linear infinite;
+        }
+
+        .circle4::before {
+            content: "";
+            position: absolute;
+            width: calc(var(--index) * 10.9);
+            height: calc(var(--index) *10.9);
+            box-shadow: 0 0 50px rgba(230, 228, 226, 0.615);
+            border-radius: 60%;
+            position: absolute;
+            border: 0.5px solid rgba(0, 0, 0, 0.038);
+            box-shadow: 0 -20px 40px rgba(245, 244, 244, 0.8);
+
+            animation: orbit 5s linear infinite;
+        }
+
+        .circle5::before {
+            content: "";
+            position: absolute;
+            width: calc(var(--index) * 11);
+            height: calc(var(--index) * 11);
+            border-radius: 60%;
+            border: 0.5px solid rgba(255, 255, 255, 0.073);
+            box-shadow: 0 0 50px rgba(230, 228, 226, 0.615);
+            box-shadow: 0 -20px 40px rgba(241, 239, 239, 0.8);
+
+            
+            animation: orbita 7s linear infinite;
+        }
+
+        /*                           @keyframes                      */
+
+        @keyframes orbit {
+            0% {}
+
+            50% {}
+
+            100% {
+                transform: rotate(360deg);
+            }
+        }
+
+        @keyframes orbita {
+            0% {}
+
+            50% {}
+
+            100% {
+                transform: rotate(-360deg);
+            }
+        }
+
+        :root {
+            --index: calc(1vw + 1vh);
+        }
+
+        .wrapper1 {
+            transform: rotateX(80deg);
+            
+            transform-style: preserve-3d;
+            position: absolute;
+
+
+        }
+
+        .wrapper2 {
+            transform: rotateX(80deg);
+           
+            transform-style: preserve-3d;
+            position: absolute;
+
+        }
+
+        .wrapper3 {
+            transform: rotateX(80deg);
+
+            transform-style: preserve-3d;
+            position: absolute;
+        }
+
+        .wrapper4 {
+            transform: rotateX(80deg);
+
+            transform-style: preserve-3d;
+            position: absolute;
+        }
+
+        .wrapper5 {
+            transform: rotateX(80deg);
+
+            transform-style: preserve-3d;
+            position: absolute;
+        }
+
+        .wrapper6 {
+            transform: rotateX(80deg);
+
+            transform-style: preserve-3d;
+            position: absolute;
+        }
+
+        .wrapper7 {
+            transform: rotateX(81deg);
+
+            transform-style: preserve-3d;
+            position: absolute;
+        }
+
+        @keyframes spin {
+            from {
+                transform: rotateZ(0deg);
+            }
+
+            to {
+                transform: rotateZ(360deg);
+            }
+        }
+
+
+        @keyframes spin2 {
+            from {
+                transform: rotateZ(0deg);
+            }
+
+            to {
+                transform: rotateZ(-360deg);
+            }
+        }
+
+
+    @media (max-width: 800px) {
+
+        body {
+            background-color: black;
+        }
+   .container { display: none;
+
+   }
+}
